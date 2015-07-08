@@ -25,7 +25,7 @@
     NSLog(@"ip IP: %@", Ip);
     NSLog(@"port: %i", Port);
     
-    
+    [_inputPortField resignFirstResponder];
     [self initNetworkCommunication:Ip andPort:Port];
     
     [self.view bringSubviewToFront:_ActionView];
