@@ -123,4 +123,9 @@
     NSLog(@"beep");
     [self sendMessage:@"beep"];
 }
+
+- (IBAction)stopButton:(id)sender {
+    NSLog(@"stop");
+    [self sendMessage:@"stop"];
+}
 @end

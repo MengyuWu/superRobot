@@ -34,6 +34,7 @@
 
 - (IBAction)beepButton:(id)sender;
 
+- (IBAction)stopButton:(id)sender;
 
 @end
 

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>050BCC11-69CB-456F-9D14-9D77FDE98718</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>superRobot</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>32AA1CF15698EE2356A000E44CEA81A6953C940C</key>
 		<string>https://bitbucket.org/mengyuwu/remotecontrolsuperrobot.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>superRobot.xcodeproj/project.xcworkspace</string>
+	<string>superRobot.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>32AA1CF15698EE2356A000E44CEA81A6953C940C</key>
