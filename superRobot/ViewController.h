@@ -14,10 +14,26 @@
     NSMutableArray * messages;
 }
 
+@property (weak, nonatomic) IBOutlet UIView *ActionView;
 @property (weak, nonatomic) IBOutlet UITextField *inputIpField;
 @property (weak, nonatomic) IBOutlet UITextField *inputPortField;
 
 - (IBAction)connectPressed:(id)sender;
+
+// Action View Mode Button
+
+- (IBAction)passiveButton:(id)sender;
+
+- (IBAction)safeButton:(id)sender;
+
+- (IBAction)fullButton:(id)sender;
+
+- (IBAction)cleanButton:(id)sender;
+
+- (IBAction)dockButton:(id)sender;
+
+- (IBAction)beepButton:(id)sender;
+
 
 @end
 

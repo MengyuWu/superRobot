@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>050BCC11-69CB-456F-9D14-9D77FDE98718</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>32AA1CF15698EE2356A000E44CEA81A6953C940C</key>
+		<string>https://bitbucket.org/mengyuwu/remotecontrolsuperrobot.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>superRobot.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>32AA1CF15698EE2356A000E44CEA81A6953C940C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/mengyuwu/remotecontrolsuperrobot.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>32AA1CF15698EE2356A000E44CEA81A6953C940C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>32AA1CF15698EE2356A000E44CEA81A6953C940C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>superRobot</string>
+		</dict>
+	</array>
+</dict>
+</plist>

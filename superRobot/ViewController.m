@@ -17,6 +17,7 @@
 @implementation ViewController
 
 
+
 - (IBAction)connectPressed:(id)sender{
     CFStringRef Ip= (CFStringRef)CFBridgingRetain(_inputIpField.text);
     UInt32 Port=[_inputPortField.text intValue];
@@ -26,6 +27,8 @@
     
     
     [self initNetworkCommunication:Ip andPort:Port];
+    
+    [self.view bringSubviewToFront:_ActionView];
     
 }
 
@@ -50,6 +53,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    messages = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,4 +61,66 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)sendMessage:(NSString *)msg {
+    NSString *response  = [NSString stringWithFormat:@"%@", msg];
+    NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
+    [outputStream write:[data bytes] maxLength:[data length]];
+}
+
+- (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent {
+    NSLog(@"stream event %lu", (unsigned long)streamEvent);
+    switch (streamEvent) {
+            
+        case NSStreamEventOpenCompleted:
+            NSLog(@"Stream opened");
+            break;
+            
+        case NSStreamEventHasBytesAvailable:
+            break;
+            
+        case NSStreamEventErrorOccurred:
+            NSLog(@"Can not connect to the host!");
+            break;
+            
+        case NSStreamEventEndEncountered:
+            [theStream close];
+            [theStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+            break;
+            
+        default:
+            NSLog(@"Unknown event");
+    }
+}
+
+
+
+- (IBAction)passiveButton:(id)sender {
+    NSLog(@"passive");
+    [self sendMessage:@"passive"];
+}
+
+- (IBAction)safeButton:(id)sender {
+    NSLog(@"safe");
+    [self sendMessage:@"safe"];
+}
+
+- (IBAction)fullButton:(id)sender {
+    NSLog(@"full");
+    [self sendMessage:@"full"];
+}
+
+- (IBAction)cleanButton:(id)sender {
+    NSLog(@"clean");
+    [self sendMessage:@"clean"];
+}
+
+- (IBAction)dockButton:(id)sender {
+    NSLog(@"dock");
+    [self sendMessage:@"dock"];
+}
+
+- (IBAction)beepButton:(id)sender {
+    NSLog(@"beep");
+    [self sendMessage:@"beep"];
+}
 @end
