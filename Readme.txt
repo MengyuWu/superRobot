@@ -39,6 +39,13 @@ Setup port forwarding
 Setup DDNS
 
 
+ssh pi@192.168.1.10   
+
+Username: pi    Password: raspberry
+
+python app.py
+
+
 Next:
 
 live stream to iphone

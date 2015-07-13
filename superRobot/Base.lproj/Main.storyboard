@@ -228,13 +228,34 @@
                     </view>
                     <connections>
                         <outlet property="ActionView" destination="gbK-6X-yU3" id="fiW-0E-JcR"/>
+                        <outlet property="controlView" destination="gbK-6X-yU3" id="xgs-ac-84N"/>
                         <outlet property="inputIpField" destination="Qyd-uF-Vbr" id="6DF-oU-Kpu"/>
                         <outlet property="inputPortField" destination="uYW-gN-i7O" id="J0Z-WX-7qi"/>
+                        <outlet property="loginView" destination="DVQ-fz-g5E" id="hdY-Uc-Mf9"/>
+                        <outlet property="webView" destination="wC3-Zu-EZl" id="gdZ-eF-iFR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="286" y="388"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="QSU-cF-FJR">
+            <objects>
+                <viewController id="MIO-yU-PqC" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iw3-bg-pQh"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKe-6Z-ixl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Spg-Pd-fch">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CT0-zc-VA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="1096"/>
         </scene>
     </scenes>
 </document>

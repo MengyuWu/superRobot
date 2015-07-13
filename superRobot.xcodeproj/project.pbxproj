@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F728A6CA1B530E96006E4A7A /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F728A6C91B530E96006E4A7A /* VideoViewController.m */; };
 		F7941FEA1B4CA5850098B991 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7941FE91B4CA5850098B991 /* main.m */; };
 		F7941FED1B4CA5850098B991 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7941FEC1B4CA5850098B991 /* AppDelegate.m */; };
 		F7941FF01B4CA5850098B991 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7941FEF1B4CA5850098B991 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F728A6C81B530E96006E4A7A /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		F728A6C91B530E96006E4A7A /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		F7941FE41B4CA5850098B991 /* superRobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = superRobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7941FE81B4CA5850098B991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7941FE91B4CA5850098B991 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				F7941FEC1B4CA5850098B991 /* AppDelegate.m */,
 				F7941FEE1B4CA5850098B991 /* ViewController.h */,
 				F7941FEF1B4CA5850098B991 /* ViewController.m */,
+				F728A6C81B530E96006E4A7A /* VideoViewController.h */,
+				F728A6C91B530E96006E4A7A /* VideoViewController.m */,
 				F7941FF11B4CA5850098B991 /* Main.storyboard */,
 				F7941FF41B4CA5850098B991 /* Images.xcassets */,
 				F7941FF61B4CA5850098B991 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 			files = (
 				F7941FF01B4CA5850098B991 /* ViewController.m in Sources */,
 				F7941FED1B4CA5850098B991 /* AppDelegate.m in Sources */,
+				F728A6CA1B530E96006E4A7A /* VideoViewController.m in Sources */,
 				F7941FEA1B4CA5850098B991 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

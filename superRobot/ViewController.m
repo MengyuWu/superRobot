@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController ()
-
+@property (strong, nonatomic) MPMoviePlayerController *streamPlayer;
+@property int viewNumber;
 @end
 
 
@@ -26,10 +28,15 @@
     NSLog(@"port: %i", Port);
     
     [_inputPortField resignFirstResponder];
-    [self initNetworkCommunication:Ip andPort:Port];
+   [self initNetworkCommunication:Ip andPort:Port];
     
-    [self.view bringSubviewToFront:_ActionView];
+   //[self.view bringSubviewToFront:_ActionView];
     
+    _loginView.hidden=true;
+    _controlView.hidden=false;
+
+    _viewNumber=2;
+
 }
 
 - (void)initNetworkCommunication:(CFStringRef)Ip andPort:(UInt32)Port{
@@ -54,6 +61,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     messages = [[NSMutableArray alloc] init];
+    
+  
+    [_webView setDelegate:self];
+    
+    NSString *urlAddress = @"http://192.168.0.104:5000";
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:requestObj];
+    
+   // [self.view addSubview:_webView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

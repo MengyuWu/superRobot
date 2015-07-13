@@ -18,6 +18,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *inputIpField;
 @property (weak, nonatomic) IBOutlet UITextField *inputPortField;
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+@property (weak, nonatomic) IBOutlet UIView *loginView;
+
+@property (weak, nonatomic) IBOutlet UIView *controlView;
+
 - (IBAction)connectPressed:(id)sender;
 
 // Action View Mode Button
